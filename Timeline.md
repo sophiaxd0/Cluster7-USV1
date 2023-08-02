@@ -2,6 +2,8 @@
 
 Team Members: Poorvi, Sam, Sophia, Solel
 
+<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/IMG_1008.jpg" width="30%" height="30%" />
+
 ## Initial Research
 
 When we got each part, we were pretty confused on what to do with them since we didn’t have any knowledge on pinouts, and many wires had cable grove adapters instead of regular female heads (which were needed to connect to the pins on the microcontroller)
@@ -49,6 +51,8 @@ Later on, Dr Jay gave us a presentation on how to configure the switches on the 
 Wiring the GPS was pretty simple after finding the pinout, but we had issues with the GPS not showing up in Mission Planner
 
 Many groups had malfunctioning GPS/compasses, so we ended up ordering new ones and they worked well. Sometimes, when a new GPS is connected, Mission Planner's config tab needs to be reset to the initial configurations. 
+
+<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/IMG_4217.HEIC" />
 
 ## Board Design Process
 
