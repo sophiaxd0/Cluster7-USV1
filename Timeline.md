@@ -2,7 +2,7 @@
 
 Team Members: Poorvi, Sam, Sophia, Solel
 
-<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/images/usv1" width="30%" height="30%" />
+<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/images/usv1.jpg" width="30%" height="30%" />
 
 ## Initial Research
 
