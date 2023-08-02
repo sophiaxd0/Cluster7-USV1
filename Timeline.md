@@ -2,7 +2,7 @@
 
 Team Members: Poorvi, Sam, Sophia, Solel
 
-<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/IMG_1008.jpg" width="30%" height="30%" />
+<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/images/usv1" width="30%" height="30%" />
 
 ## Initial Research
 
@@ -65,7 +65,7 @@ Wiring the GPS was pretty simple after finding the pinout, but we had issues wit
 Many groups had malfunctioning GPS/compasses, so we ended up ordering new ones and they worked well. Sometimes, when a new GPS is connected, Mission Planner's config tab needs to be reset to the initial configurations. 
 
 ### Electronics Box
-<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/IMG_4217_(1).jpg" width = "30%" height = "30%" />
+<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/images/electronics_box.jpg" width = "30%" height = "30%" />
 
 ### Thrusters
 The thrusters also had to be soldered in order to connect to the board correctly. In Misson Planner's Servo Output tab, we set the pins connected to each thruster to "ThrottleRight" and "ThrottleLeft". In order to figure out right and left, observe which motor spins clockwise and counterclockwise. If Mission Planner doesn't allow changing Servo Outputs, check the arming settings in the Config tab. 
@@ -80,16 +80,16 @@ Once we had all the instruments attached and calibrated, we created a route with
 
 Clicking on the map will create a new waypoint. To loop the waypoints, set the last waypoint to "Do Jump", the first column to 1(for Waypoint 1) and the repeats column to -1 for infinite repetitions. 
 
-<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/mail.png" width="50%" height="50%"/>
+<img src="https://github.com/sophiaxd0/Cluster7-USV1/blob/main/images/waypoints.png" width="50%" height="50%"/>
 
 ## Final Project: ESP32 Camera 
-<img src = "https://github.com/sophiaxd0/Cluster7-USV1/blob/main/IMG_4426.jpg" width="30%" height="30%"/>
+<img src = "https://github.com/sophiaxd0/Cluster7-USV1/blob/main/images/camera.jpg" width="30%" height="30%"/>
 For the lake test, we used the CameraWebServer example from the ESP32Lab library. However, this requires WiFi and we weren't able to set up a router. 
 
 For the rest of this project, we wanted to use the camera to detect trash on the lake, so we trained an object detection model following [this tutorial](https://eloquentarduino.com/esp32-camera-object-detection/). This model is very easy to use, but isn't as powerful compared to YOLO or R-CNN models, so if we had more time to implement/a more powerful camera, we would have tried one of those. 
 
 Object Detection Data
 
-<img src = "https://github.com/sophiaxd0/Cluster7-USV1/blob/main/IMG_7039.jpg" width="30%" height="30%"/>
+<img src = "https://github.com/sophiaxd0/Cluster7-USV1/blob/main/images/serial_detection.jpg" width="30%" height="30%"/>
 
 Since the data from that tutorial prints into the Serial Monitor, which can't be seen when the ESP32 is not connected to the computer through USB, we used [this Web Server tutorial](https://randomnerdtutorials.com/esp32-web-server-sent-events-sse/#demonstration) and slightly modified it to our purposes. However, running the server requires WiFi and makes the detection very slow, so we would probably just use radio communication in the future. 
